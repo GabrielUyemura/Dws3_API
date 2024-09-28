@@ -1,0 +1,45 @@
+### teste de inserção de aluno 
+POST http://localhost:40000/insertSalasDeAula HTTP/1.1
+content-type: application/json
+
+{
+  "salasdeaulaid": 0,
+  "descricao": "desc 1",
+  "localizacao": "Rua tal",
+  "capacidade": "40",
+  "removido": false
+}
+
+
+### teste de buscar todos os SalasDeAula GET 
+http://localhost:40000/getAllSalasDeAula HTTP/1.1 
+content-type: application/json
+
+### teste de buscar aluno por ID 
+POST http://localhost:40000/getSalasDeAulaByID HTTP/1.1 
+content-type: application/json
+
+{
+"salasdeaulaid": 2
+}
+
+### teste de atualização de aluno 
+POST http://localhost:40000/updateSalasDeAula HTTP/1.1
+content-type: application/json
+
+{
+  "salasdeaulaid": 4,
+  "descricao": "desc 1",
+  "localizacao": "Rua tal",
+  "capacidade": "40",
+  "removido": false
+}
+
+
+### teste de atualização de aluno POST 
+POST http://localhost:40000/deleteSalasDeAula HTTP/1.1
+content-type: application/json
+
+{
+  "salasdeaulaid": 5
+}
