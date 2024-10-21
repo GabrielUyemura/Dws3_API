@@ -18,7 +18,6 @@ const getSalasDeAulaByID = async (salasdeaulaIDPar) => {
 };
 
 const insertSalasDeAula = async (salasdeaulaREGPar) => {
-    //@ Atenção: aqui já começamos a utilizar a variável msg para retornor erros de banco de dados.
     let linhasAfetadas;
     let msg = "ok";
     try {

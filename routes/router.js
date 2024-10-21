@@ -3,7 +3,6 @@ const routerApp = express.Router();
 
 const appSalasDeAula = require("../apps/SalasDeAula/controller/ctlSalasDeAula.js");
 
-// middleware that is specific to this router
 routerApp.use((req, res, next) => {
     next();
 });
